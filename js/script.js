@@ -50,7 +50,8 @@ createApp({
                 done: false
             }
             return newTask,
-            this.tasks.push(newTask)
+            this.tasks.push(newTask),
+            this.newTaskTxt = ''
         }
     }
 }).mount('#app')
