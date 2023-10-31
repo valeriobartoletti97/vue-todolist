@@ -10,13 +10,13 @@
 
 <body>
 
-    <div id="app" class="vh-100 pt-3">
+    <div id="app" class="pt-3 p-relative">
         <div class="container">
             <header class="text-center mx-auto">
                 <h1 class="text-uppercase pt-2">Come diventare grossi</h1>
                 <div class="input-group mb-3 mx-auto pt-5">
                     <input type="text" class="form-control" placeholder="Inserisci una nuova task" v-model="newTaskTxt" @keyup.enter="newTaskTxt !=='' ? generateTask(): ''">
-                    <button class="btn btn-primary" type="button" @click="newTaskTxt !=='' ? generateTask(): ''">New Task</button>
+                    <button class="btn " type="button" @click="newTaskTxt !=='' ? generateTask(): ''">New Task</button>
                 </div>
             </header>
             <main>
@@ -28,6 +28,9 @@
                         </span>
                     </li>
                 </ul>
+                <audio class="d-block mx-auto mt-5" controls autoplay muted>
+                    <source src="audio/file.mp3" type="audio/mpeg">
+                </audio>
             </main>
         </div>
     </div>
