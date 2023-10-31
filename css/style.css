@@ -1,0 +1,21 @@
+*{
+   margin: 0;
+   padding:0;
+   box-sizing: border-box;
+}
+#app{
+    color:white;
+    background-color:gray
+}
+header{
+    background-image: url(../img/header.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+header>h1{
+    
+}
+header>div{
+    width:400px !important;
+}
