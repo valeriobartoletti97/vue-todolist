@@ -13,9 +13,12 @@ header{
     background-size: cover;
     background-position: center;
 }
-header>h1{
-    
+li:hover{
+    cursor:pointer;
 }
 header>div{
     width:400px !important;
+}
+.done{
+    text-decoration: line-through;
 }

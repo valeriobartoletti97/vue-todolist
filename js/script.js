@@ -27,7 +27,7 @@ createApp({
             {
                 id:5,
                 text: 'Frog Jump',
-                done:false
+                done:true
             },
             {
                 id:6,
