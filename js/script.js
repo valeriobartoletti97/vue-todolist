@@ -35,12 +35,22 @@ createApp({
                 done:false
             },
            ],
-           lastId: 6
+           lastId: 6,
+           newTaskTxt: ''
         }
     },
     methods:{
         removeTask(i){
             this.tasks.splice(i,1)
+        },
+        generateTask(){
+            let newTask = {
+                id: this.lastId ++,
+                text: this.newTaskTxt,
+                done: false
+            }
+            return newTask,
+            this.tasks.push(newTask)
         }
     }
 }).mount('#app')

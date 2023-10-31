@@ -15,8 +15,8 @@
             <header class="text-center mx-auto">
                 <h1 class="text-uppercase pt-2">Come diventare grossi</h1>
                 <div class="input-group mb-3 mx-auto pt-5">
-                    <input type="text" class="form-control" placeholder="Inserisci una nuova task">
-                    <button class="btn btn-primary" type="button" id="button-addon1">New Task</button>
+                    <input type="text" class="form-control" placeholder="Inserisci una nuova task" v-model="newTaskTxt">
+                    <button class="btn btn-primary" type="button" @click="generateTask">New Task</button>
                 </div>
             </header>
             <main>
